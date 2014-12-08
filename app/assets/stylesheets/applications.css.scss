@@ -1,0 +1,41 @@
+// Place all the styles related to the Applications controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.applications {
+	table {
+		border-collapse: collapse;
+		
+		tr td{
+			padding: 5px;
+			vertical-align: top;
+		}
+		
+		.id_and_header {
+				//font-weight: bold;
+				
+				dt {
+					font-weight: bold;
+				}
+					
+				dd {
+					margin: 0;
+				}
+		}
+		
+		
+		
+		thead {
+			color: red;
+			background: #d6d6ff;
+		}
+		
+	}
+	
+	.table_row_even {
+		background: #e0f8f8
+	}
+	
+	.table_row_odd {
+		background: #b0f8f8
+	}
+}

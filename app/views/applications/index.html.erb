@@ -1,0 +1,34 @@
+<h1>Submitted Applications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project ID & Title</th>
+      <th>Cost</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @applications.each do |application| %>
+      <tr class= "<%= cycle('table_row_odd', 'table_row_even') %>">
+        <td class='id_and_header'>
+					<dt><%= application.projid %></dt>
+					<dd><%= application.title %></dd>
+				</td>
+        <td><%= number_to_currency(application.cost) %></td>
+        <td><%= application.location %></td>
+        <td>
+					<%= link_to 'Examine', application %><br/>
+					<%= link_to 'Edit', edit_application_path(application) %><br/>
+					<%= link_to 'Delete', application, method: :delete, data: { confirm: 'Are you really sure?' } %><br/>
+				<td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Application', new_application_path %>
