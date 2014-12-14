@@ -22,8 +22,6 @@
 				}
 		}
 		
-		
-		
 		thead {
 			color: red;
 			background: #d6d6ff;
@@ -37,5 +35,43 @@
 	
 	.table_row_odd {
 		background: #b0f8f8
+	}
+	
+	.field {
+		color: blue;
+			
+		textarea{
+			color: orange;
+		}
+
+		input{
+			color: green;
+		}
+		
+		
+	}
+	
+	div.field {
+		width: 300px;
+	}
+
+	#projecttitle {
+		//width: 45%;
+		float: left;
+	}
+	
+	#location {
+		//width: 45%;
+		//background: red;
+		float: left;
+	}
+	
+	#estimatedcost{
+		//margin-left: 10%;
+		
+	}	
+
+	div#titlelocation {
+		width: 1000px;
 	}
 }
