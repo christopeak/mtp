@@ -28,11 +28,13 @@
 
 #columns {
 	background: #69f;
+	border-bottom: 1px solid;
+	color: #06f;
 	
 	#main {
 		margin-left: 13em;
 		padding: 1em;
-		background: white;
+		background: #EBF5FF;
 		//float: left;
 	}
 	
@@ -43,5 +45,15 @@
 		width: 10em;
 	}
 
+	ul {
+		padding: 0;
+		li {
+			list-style: none;
+			
+			a {
+				color: #9cf;
+			}
+		}
+	}
 	
 }

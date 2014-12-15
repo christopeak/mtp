@@ -23,18 +23,18 @@
 		}
 		
 		thead {
-			color: red;
-			background: #d6d6ff;
+			color: white;
+			background: #6b8fb2;;
 		}
 		
 	}
 	
 	.table_row_even {
-		background: #e0f8f8
+		background: #D6EBFF
 	}
 	
 	.table_row_odd {
-		background: #b0f8f8
+		background: #ADD6FF
 	}
 	
 	.field {
@@ -52,16 +52,16 @@
 	}
 	
 	div.field {
-		width: 300px;
+		width: 250px;
 	}
 
 	#projecttitle {
-		//width: 45%;
+		width: 45%;
 		float: left;
 	}
 	
 	#location {
-		//width: 45%;
+		width: 45%;
 		//background: red;
 		float: left;
 	}
@@ -72,6 +72,6 @@
 	}	
 
 	div#titlelocation {
-		width: 1000px;
+		//width: 1000px;
 	}
 }
