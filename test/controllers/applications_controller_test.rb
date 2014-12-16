@@ -3,6 +3,12 @@ require 'test_helper'
 class ApplicationsControllerTest < ActionController::TestCase
   setup do
     @application = applications(:one)
+		@update = {
+			projid: 5,
+			title: 'a random title',
+			cost: 100,
+			location: 'wherever'
+		}
   end
 
   test "should get index" do
@@ -18,7 +24,8 @@ class ApplicationsControllerTest < ActionController::TestCase
 
   test "should create application" do
     assert_difference('Application.count') do
-      post :create, application: { cost: @application.cost, location: @application.location, projid: @application.projid, title: @application.title }
+      #post :create, application: { cost: @application.cost, location: @application.location, projid: @application.projid, title: @application.title }
+			post :create, application: @update
     end
 
     assert_redirected_to application_path(assigns(:application))
