@@ -5,6 +5,8 @@ class Application < ActiveRecord::Base
 	validates :cost, numericality: {less_than_or_equal_to: 9999999.99}
 	#validates_uniqueness_of :title
 	#validates_uniqueness_of :projid
+	validates :title, uniqueness: true
+	validates :projid, uniqueness: true
 	
 
 end

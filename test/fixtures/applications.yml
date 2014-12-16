@@ -11,3 +11,9 @@ two:
   title: MyText2
   cost: 9.99
   location: MyText
+
+three:
+  projid: 300
+  title: another title
+  cost: 100.00
+  location: another location
